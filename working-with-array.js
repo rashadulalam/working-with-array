@@ -25,3 +25,17 @@ function checkPerson( age2 ) {
 const person = age2.find(checkPerson);
 
 console.log(person);
+
+/**
+ * 1. Array map()
+ * একটি  array  এররর মধ্যে থাকা প্রত্যকেটি item কে আমাদের প্রয়োজন অনুযায়ী যেকোন কাজ যে কোন  কিছু করতে পারি। প্রত্যেকটা value/ item কে নিয়ে কোন কিছু করতে চাইলে map() ব্যবহার করবো।
+ */
+const age3 = [32, 33, 43, 12, 18, 15, 19, 14, 52];
+
+function newNumber( age3 ) {
+    return age3 * 2
+}
+
+const newAge = age3.map(newNumber);
+console.log(age3)
+console.log(newAge);
