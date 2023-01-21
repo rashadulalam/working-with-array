@@ -37,5 +37,18 @@ function newNumber( age3 ) {
 }
 
 const newAge = age3.map(newNumber);
-console.log(age3)
-console.log(newAge);
+// console.log(age3)
+// console.log(newAge);
+
+/**
+ * 1. Array reduce()
+ * array  এর একটা item এর সাথে আরেকটা item এর মধ্যে কানেকশন তৈরি করে কাজ করে। reduce() main array কে কোন পরিবর্তন করেনা এবং এটি নতুন araay return করে।
+ */
+const age4 = [32, 33, 43, 12, 18, 15, 19, 14, 52];
+
+function getTotal(first, last) {
+    return first + last;
+}
+const total = age4.reduce( getTotal );
+console.log(total)
+
