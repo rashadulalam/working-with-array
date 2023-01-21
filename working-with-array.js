@@ -11,4 +11,17 @@ function isVoter( vAge ) {
 }
 const voterList = age1.filter(isVoter);
 
-console.log(voterList)
+/**
+ * 1. Array find()
+ * এটি যে কোন একটা condition এর উপর ভিত্তি করে তার প্রথম item কে বা সেইম item কে খুঝে বের করতে সাহায্য করে।
+ */
+
+const age2 = [32, 33, 43, 12, 18, 15, 19, 14, 52];
+
+function checkPerson( age2 ) {
+    return age2 > 33;
+}
+
+const person = age2.find(checkPerson);
+
+console.log(person);
