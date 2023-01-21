@@ -24,7 +24,7 @@ function checkPerson( age2 ) {
 
 const person = age2.find(checkPerson);
 
-console.log(person);
+// console.log(person);
 
 /**
  * 1. Array map()
@@ -50,5 +50,12 @@ function getTotal(first, last) {
     return first + last;
 }
 const total = age4.reduce( getTotal );
-console.log(total)
+// console.log(total)
 
+/**
+ * 1. Array sort()
+ * array  এর ভিতরে item গুলো সাজানোর জন্য sor() ব্যবাহর করা হয়। এটি মেইন array কে ও পরিববর্তন করে।
+ */
+const fruits = ["mango", "jackfruit", "banana", "orange", "blackberry", "watermelon"];
+fruits.sort();
+console.log(fruits)
