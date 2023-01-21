@@ -12,7 +12,7 @@ function isVoter( vAge ) {
 const voterList = age1.filter(isVoter);
 
 /**
- * 1. Array find()
+ * 2. Array find()
  * এটি যে কোন একটা condition এর উপর ভিত্তি করে তার প্রথম item কে বা সেইম item কে খুঝে বের করতে সাহায্য করে।
  */
 
@@ -27,7 +27,7 @@ const person = age2.find(checkPerson);
 // console.log(person);
 
 /**
- * 1. Array map()
+ * 3. Array map()
  * একটি  array  এররর মধ্যে থাকা প্রত্যকেটি item কে আমাদের প্রয়োজন অনুযায়ী যেকোন কাজ যে কোন  কিছু করতে পারি। প্রত্যেকটা value/ item কে নিয়ে কোন কিছু করতে চাইলে map() ব্যবহার করবো।
  */
 const age3 = [32, 33, 43, 12, 18, 15, 19, 14, 52];
@@ -41,7 +41,7 @@ const newAge = age3.map(newNumber);
 // console.log(newAge);
 
 /**
- * 1. Array reduce()
+ * 4. Array reduce()
  * array  এর একটা item এর সাথে আরেকটা item এর মধ্যে কানেকশন তৈরি করে কাজ করে। reduce() main array কে কোন পরিবর্তন করেনা এবং এটি নতুন araay return করে।
  */
 const age4 = [32, 33, 43, 12, 18, 15, 19, 14, 52];
@@ -53,7 +53,7 @@ const total = age4.reduce( getTotal );
 // console.log(total)
 
 /**
- * 1. Array sort()
+ * 5. Array sort()
  * array  এর ভিতরে item গুলো সাজানোর জন্য sor() ব্যবাহর করা হয়। এটি মেইন array কে ও পরিববর্তন করে।
  */
 const fruits = ["mango", "jackfruit", "banana", "orange", "blackberry", "watermelon"];
